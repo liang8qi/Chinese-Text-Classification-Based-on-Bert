@@ -2,10 +2,10 @@
 基于Bert实现中文文本二分类
 
 **环境**：
-    - Python 3.7.4
-    - torch 1.3.1
-    - transformers 2.5.0 
-    - 2080Ti
+- Python 3.7.4
+- torch 1.3.1
+- transformers 2.5.0 
+- 2080Ti
 
 样本示例如下，0表示负样本，1表示正样本：
 ![examples.png](pictures/examples.png)
