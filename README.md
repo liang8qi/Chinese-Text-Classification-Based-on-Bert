@@ -30,7 +30,7 @@ results = results[:index]  # training dataset
 ```
 
 ### 1.3 添加特殊符号
-由于使用的是中文版**bert-base-chinese**预训练的Bert模型，且该版本是基于字的，所以不需要对每个example的sentence进行分词，只需要在每个sentence的开始和结尾添分别特殊符号**[CLS]**和**[SEP]**:
+由于使用的是中文版**bert-base-chinese**预训练的Bert模型，且该版本是基于字的，所以不需要对每个example的sentence进行分词，只需要在每个sentence的开始和结尾添分别特殊符号[CLS]和[SEP]:
 
 ```python
 sequence = ['[CLS]'] + self.sequence_list[item] + ['[SEP]']
@@ -86,6 +86,6 @@ self.optimizer = AdamW(params=optimizer_grouped_parameters, lr=config.lr)
 
 ### 4. 评估
 
-加载保存的在验证集上效果最好的模型，在测试集上跑一遍，将结果保存在**submission\_random.csv**文件中，详情参考**eval\_model.p**
+加载保存的在验证集上效果最好的模型，在测试集上跑一遍，将结果保存在**submission\_random.csv**文件中，详情参考**eval\_model.py**
 
 
