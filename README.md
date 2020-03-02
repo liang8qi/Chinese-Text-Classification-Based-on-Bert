@@ -54,7 +54,7 @@ for index, seq_len in enumerate(lens):
 
 模型采用Bert+MLP的形式，Bert使用预训练的`$bert-base-chinese$`，使用`$[CLS]$`符号对应的输出作为MLP层的输入，MLP层的结构如下：
 
-![MLP.png](http://note.youdao.com/yws/res/6792/WEBRESOURCEa687a2bfc12e5e293719679bf87ec9f2)
+![MLP.png](pictures/mlp.png)
 
 ## 3. 训练
 ### 3.1 优化器
@@ -80,7 +80,7 @@ self.optimizer = AdamW(params=optimizer_grouped_parameters, lr=config.lr)
 ### 3.2 结果
 在第6个epoch，模型去验证集取得最好的结果：
 
-![Result.png](http://note.youdao.com/yws/res/6830/WEBRESOURCEacfe136f07f2720dc4676b43c9c4c2a3)
+![Result.png](pictures/training.png)
 
 ### 4. 评估
 
