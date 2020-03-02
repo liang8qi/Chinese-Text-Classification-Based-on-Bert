@@ -20,7 +20,7 @@ else:
 
 ### 1.2 数据集划分
 
-由于没有提供验证集，所以原先的训练集中随机抽取**5%**的样本作为验证集：
+由于没有提供验证集，所以原先的训练集中随机抽取**5/%**的样本作为验证集：
 
 ```python
 random.shuffle(results)
@@ -30,7 +30,7 @@ results = results[:index]  # training dataset
 ```
 
 ### 1.3 添加特殊符号
-由于使用的是中文版**bert-base-chinese**预训练的Bert模型，且该版本是基于字的，所以不需要对每个example的sentence进行分词，只需要在每个sentence的开始和结尾添分别特殊符号：**[CLS]**和**[SEP]**:
+由于使用的是中文版**bert-base-chinese**预训练的Bert模型，且该版本是基于字的，所以不需要对每个example的sentence进行分词，只需要在每个sentence的开始和结尾添分别特殊符号**[CLS]**和**[SEP]**:
 
 ```python
 sequence = ['[CLS]'] + self.sequence_list[item] + ['[SEP]']
