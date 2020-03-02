@@ -6,7 +6,7 @@
 ### 1.1 去噪
 
 观察训练数据，发现训练数据中有很多重复数据，且有些重复数据的拥有多种标签：
-    ![Noise.png](http://note.youdao.com/yws/res/6763/WEBRESOURCE3c7dedd282fbfca770ad64d53e743f7f)
+    ![Noise.png](pictures/noise.png)
 对于这类example，计算所有标签的均值`$\avg$`，通过以下方法来给它重新分配标签：
 
 ```python
