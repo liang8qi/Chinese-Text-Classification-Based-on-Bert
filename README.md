@@ -1,6 +1,8 @@
 # Chinese-Text-Classification-Based-on-Bert
 基于Bert实现中文文本二分类
 
+样本示例如下，0表示负样本，1表示正样本：
+![examples.png](pictures/examples.png)
 ## 1. 数据预处理
 
 ### 1.1 去噪
