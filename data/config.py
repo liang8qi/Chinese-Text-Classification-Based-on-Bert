@@ -23,7 +23,7 @@ using_pre_trained_emb = False
 batch_size = 128
 bert_lr = 2e-5
 lr = 0.01
-summary_flush_every = 100
+summary_flush_every = 10
 report_every = 10
 
 # test
